@@ -13,7 +13,6 @@ install:
 env:
 global:
   - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
-  - CODECLIMATE_REPO_TOKEN=[01d774bab6acddc3a9b020f593c13921aad5fef0efa6c5bc995425d84041ea1b]
 
 
 script:
